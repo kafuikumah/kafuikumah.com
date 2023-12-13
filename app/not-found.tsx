@@ -11,7 +11,7 @@ const Custom404 = (): JSX.Element => (
     <h1>404 - Page not found</h1>
     <p className="text-secondary">
       Uh oh! This page does not exists, maybe you clicked an old link or
-      misspelled. Please try again…
+      misspelled a link. Please try again…
     </p>
     <div className="h-2" />
     <Link href="/" underline>
