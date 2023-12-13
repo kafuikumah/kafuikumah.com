@@ -65,7 +65,7 @@ export default async function Home() {
         >
           When I am not coding up a storm, you can find me exploring new
           technologies, playing video games, getting lost in a good book or
-          geeking out with passionate like-minded personalities.
+          geeking out with passionate like-minded weirdos.
         </p>
 
         <ul

@@ -1,8 +1,8 @@
 {
-  "/projects/page": "app/projects/page.js",
   "/page": "app/page.js",
+  "/projects/page": "app/projects/page.js",
+  "/not-found": "app/not-found.js",
   "/blog/page": "app/blog/page.js",
-  "/icon.png/route": "app/icon.png/route.js",
   "/about/page": "app/about/page.js",
-  "/not-found": "app/not-found.js"
+  "/icon.png/route": "app/icon.png/route.js"
 }
