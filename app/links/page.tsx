@@ -8,14 +8,14 @@ export default function Links() {
     <>
       <div className="flex flex-col gap-16 md:gap-24">
         <div className="flex animate-in flex-col gap-8">
-          <Image
+          {/* <Image
             src={avatar}
             width={100}
             height={100}
             alt="avatar"
             className="mx-auto animate-in rounded-full bg-secondary"
             style={{ "--index": 1 } as React.CSSProperties}
-          />
+          /> */}
           <div
             className="animate-in space-y-1"
             style={{ "--index": 2 } as React.CSSProperties}
