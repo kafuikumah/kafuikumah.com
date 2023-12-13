@@ -76,23 +76,19 @@ export default function About() {
             <p>Hello world, I&apos;m Kafui Kumah!</p>
 
             <p>
-              I have a passion for design and am always looking for ways to
-              incorporate it into my engineering work.
+              I am an innovative entrepreneur and self-taught software engineer
+              dedicated to accessible education, human capacity development in
+              technology and ESG initiatives.
             </p>
             <p>
-              In addition to coding, I also make{" "}
-              <Link
-                className="underline"
-                href="https://www.youtube.com/channel/@brianruizy"
-              >
-                YouTube
-              </Link>{" "}
-              videos, where I focus on tech gear, creative vlogs, and a bit of
-              personal development.
+              In addition to coding, I make the world a better place through
+              projects undertaken by my ESG startup,{" "}
+              <Link href="https://greenify.com">Greenify</Link>.
             </p>
             <p>
-              When I&apos;m not at my desk I am probably lifting weights,
-              playing soccer, or at a coffee shop :)
+              When I am not coding up a storm, you can find me exploring new
+              technologies, playing video games, getting lost in a good book or
+              geeking out with passionate like-minded people :)
             </p>
           </div>
         </Section>
@@ -101,8 +97,8 @@ export default function About() {
           <div className="flex w-full flex-col gap-8">
             <p>
               Have a question or just want to chat? Feel free to{" "}
-              <Link href="mailto:contact@b-r.io">email me</Link>. Try finding me
-              anywhere else at @brianruizy
+              <Link href="mailto:kafui.kofi.kumah@gmail.com">email me</Link>.
+              Try finding me anywhere else at @kafuikumah
             </p>
             <ul className="animated-list grid flex-grow grid-cols-1 gap-2 md:grid-cols-2">
               {ConnectLinks.map((link) => (
