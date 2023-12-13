@@ -54,8 +54,9 @@ export default async function Home() {
           className="max-w-lg animate-in text-primary"
           style={{ "--index": 2 } as React.CSSProperties}
         >
-          Interested in learning and exploring opportunities that challenge me
-          to grow my problem-solving, communication and writing skills.
+          Lately, my focus is on learning and exploring opportunities that
+          challenge me to grow my problem-solving, communication and writing
+          skills.
         </p>
 
         <p
