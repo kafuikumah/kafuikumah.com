@@ -67,7 +67,6 @@ export default function Blog() {
 
                 <p className="line-clamp-3 text-tertiary">
                   {project.description}
-                  My name is Hilary
                 </p>
               </div>
             </li>
