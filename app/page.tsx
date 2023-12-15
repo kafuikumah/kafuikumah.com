@@ -47,26 +47,27 @@ export default async function Home() {
           className="max-w-lg animate-in text-primary"
           style={{ "--index": 2 } as React.CSSProperties}
         >
-          Hi, I&apos;m Kafui Kumah, a software engineer mostly interested in
-          python, nodejs, and building robust backend systems.
+          Mostly building in python, nodejs, and crafting robust backend systems
+          with a focus on application performance, scalability, application
+          infrastructure and security.
         </p>
         <p
           className="max-w-lg animate-in text-primary"
           style={{ "--index": 2 } as React.CSSProperties}
         >
-          Lately, my focus is on learning and exploring opportunities that
+          Lately, my interest lies in learning and exploring opportunities that
           challenge me to grow my problem-solving, communication and writing
           skills.
         </p>
 
-        <p
+        {/* <p
           className="max-w-lg animate-in text-primary"
           style={{ "--index": 2 } as React.CSSProperties}
         >
           When I am not coding up a storm, you can find me exploring new
           technologies, playing video games, getting lost in a good book or
           geeking out with passionate like-minded weirdos.
-        </p>
+        </p> */}
 
         <ul
           className="animated-list flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
