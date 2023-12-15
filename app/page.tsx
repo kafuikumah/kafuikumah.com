@@ -103,7 +103,7 @@ export default async function Home() {
           href="/blog"
           className="text-secondary underline underline-offset-4 hover:text-primary"
         >
-          See All
+          See All Posts
         </Link>
       </div>
     </div>
