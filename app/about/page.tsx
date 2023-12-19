@@ -7,10 +7,9 @@ import ConnectLinks from "../../components/ConnectLinks";
 import Workplaces from "./components/Workplaces";
 import Gallery from "./components/Gallery";
 
-import hinesLogo from "public/work/hines-logo.jpeg";
-import perishipLogo from "public/work/periship-logo.jpeg";
-import camsLogo from "public/work/cams-logo.png";
-import uhdLogo from "public/work/uhd.png";
+import ibsgh from "public/work/ibsLogo.png";
+import getinnotized from "public/work/gizLogo.png";
+import swoove from "public/work/swooveLogo.png";
 
 import meLily from "public/gallery/me-lily.jpg";
 import colorado from "public/gallery/colorado.jpg";
@@ -35,7 +34,7 @@ export default function About() {
           Just a quick glimpse.
         </p>
       </div>
-      <div className="mb-8 lg:hidden">
+      {/* <div className="mb-8 lg:hidden">
         <div
           className="animate-in"
           style={{ "--index": 1 } as React.CSSProperties}
@@ -66,7 +65,7 @@ export default function About() {
       </div>
       <div className="hidden lg:block">
         <Gallery />
-      </div>
+      </div> */}
       <div
         className="flex animate-in flex-col gap-16 md:gap-24"
         style={{ "--index": 3 } as React.CSSProperties}
@@ -133,18 +132,33 @@ export default function About() {
         <Section heading="Work" headingAlignment="left">
           <div className="flex w-full flex-col gap-8">
             <p>
-              {new Date().getFullYear() - 2019}+ years of professional
+              {new Date().getFullYear() - 2018}+ years of professional
               development experience.
             </p>
             <p>
-              I started my career teaching others how to code, which I will
-              always be appreciative of. Then I worked at a few small local
-              companies. Now I&apos;m a full stack engineer currently working at{" "}
-              <Link className="underline" href="https://hines.com">
-                Hines
+              I started my career by building a food delivery app called PicApp
+              Foods. Then I worked at{" "}
+              <Link className="underline" href="https://www.swoove360.com/">
+                Swoove
               </Link>
-              , one of the largest private real estate investors in the world.
+              (then: Roots Digital).
             </p>
+            <p>
+              Throughout my career, I have tried to build many startups while
+              dabbling in freelancing for a bit.
+            </p>
+            <p>
+              Now I&apos;m a backend engineer currently working at{" "}
+              <Link
+                className="underline"
+                href="https://www.iotadigitallab.com/"
+              >
+                iOta Digial Lab
+              </Link>
+              , a software development and product design agency in New York,
+              USA.
+            </p>
+
             <Workplaces items={workplaces} />
           </div>
         </Section>
@@ -155,31 +169,24 @@ export default function About() {
 
 const workplaces = [
   {
-    title: "Full Stack Engineer",
-    company: "Hines",
-    time: "2022 -",
-    imageSrc: hinesLogo,
-    link: "https://hines.com",
-  },
-  {
-    title: "Software Engineer",
-    company: "PeriShip",
+    title: "Lead Sostware Developer",
+    company: "Intelligent Building Solutions",
     time: "2021 - 2022",
-    imageSrc: perishipLogo,
-    link: "https://peripharma.com/",
+    imageSrc: ibsgh,
+    link: "https://www.ibsgh.com/",
   },
   {
-    title: "Python Developer",
-    company: "CAMS",
-    time: "2019 - 2020",
-    imageSrc: camsLogo,
-    link: "https://camstex.com",
+    title: "Fullstack Developer",
+    company: "Getinnotized",
+    time: "2019 - 2022",
+    imageSrc: getinnotized,
+    link: "https://www.getinnotized.com//",
   },
   {
-    title: "Coding Camp Instructor",
-    company: "University of Houston",
-    time: "2019",
-    imageSrc: uhdLogo,
-    link: "https://www.uhd.edu/",
+    title: "iOS Developer",
+    company: "Swoove",
+    time: "2018-2020",
+    imageSrc: swoove,
+    link: "https://www.swoove360.com/",
   },
 ];
