@@ -7,6 +7,8 @@ import ConnectLinks from "../../components/ConnectLinks";
 import Workplaces from "./components/Workplaces";
 import Gallery from "./components/Gallery";
 
+import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
+
 import ibsgh from "public/work/ibsLogo.png";
 import getinnotized from "public/work/gizLogo.png";
 import swoove from "public/work/swooveLogo.png";
@@ -144,11 +146,11 @@ export default function About() {
               (then: Roots Digital).
             </p>
             <p>
-              Throughout my career, I have tried to build many startups while
-              dabbling in freelancing for a bit.
+              Throughout my career, I have built many startups and projects
+              while dabbling in freelance on the side.
             </p>
             <p>
-              Now I&apos;m a backend engineer currently working at{" "}
+              Now, I&apos;m a backend engineer currently working at{" "}
               <Link
                 className="underline"
                 href="https://www.iotadigitallab.com/"
@@ -160,6 +162,20 @@ export default function About() {
             </p>
 
             <Workplaces items={workplaces} />
+            <ul
+              className="animated-list flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
+              style={{ "--index": 2 } as React.CSSProperties}
+            >
+              <li className="transition-opacity">
+                <Link
+                  href="/about"
+                  className="flex items-center gap-2 no-underline"
+                >
+                  <ArrowUpRightIcon className="h-5 w-5" />
+                  <span>Download my full resumé</span>
+                </Link>
+              </li>
+            </ul>
           </div>
         </Section>
       </div>
