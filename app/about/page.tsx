@@ -171,6 +171,8 @@ export default function About() {
                   href="/about"
                   className="flex items-center gap-2 no-underline"
                 >
+                  <br />
+                  <br />
                   <ArrowUpRightIcon className="h-5 w-5" />
                   <span>Download my full resumé</span>
                 </Link>

@@ -84,11 +84,11 @@ export default async function Home() {
           </li>
           <li className="transition-opacity">
             <Link
-              href="/links"
+              href="/about"
               className="flex items-center gap-2 no-underline"
             >
               <ArrowUpRightIcon className="h-5 w-5" />
-              <span>More ways to connect</span>
+              <span>Learn more about me</span>
             </Link>
           </li>
         </ul>
