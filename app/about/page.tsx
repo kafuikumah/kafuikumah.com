@@ -9,6 +9,7 @@ import Gallery from "./components/Gallery";
 
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
+import korey from "public/work/koreyLogo.png";
 import ibsgh from "public/work/ibsLogo.png";
 import getinnotized from "public/work/gizLogo.png";
 import swoove from "public/work/swooveLogo.png";
@@ -84,7 +85,10 @@ export default function About() {
             <p>
               In addition to coding, I make the world a better place through
               projects undertaken by my ESG startup,{" "}
-              <Link href="https://greenify.com">Greenify</Link>.
+              <Link href="https://koreysustainability.com">
+                Korey Sustainability
+              </Link>
+              .
             </p>
             <p>
               When I am not coding up a storm, you can find me exploring new
@@ -187,7 +191,14 @@ export default function About() {
 
 const workplaces = [
   {
-    title: "Lead Sostware Developer",
+    title: "Tech Lead",
+    company: "Korey Sustainability",
+    time: "2023 - ",
+    imageSrc: korey,
+    link: "https://www.koreysustainability.com/",
+  },
+  {
+    title: "Lead Software Developer",
     company: "Intelligent Building Solutions",
     time: "2021 - 2022",
     imageSrc: ibsgh,
