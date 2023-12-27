@@ -5,7 +5,6 @@ import Link from "@/components/ui/Link";
 import Section from "@/components/Section";
 import ConnectLinks from "../../components/ConnectLinks";
 import Workplaces from "./components/Workplaces";
-import Gallery from "./components/Gallery";
 
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
@@ -13,9 +12,6 @@ import korey from "public/work/koreyLogo.png";
 import ibsgh from "public/work/ibsLogo.png";
 import getinnotized from "public/work/gizLogo.png";
 import swoove from "public/work/swooveLogo.png";
-
-import meLily from "public/gallery/me-lily.jpg";
-import colorado from "public/gallery/colorado.jpg";
 
 export const metadata: Metadata = {
   title: "About | Kafui Kumah",
