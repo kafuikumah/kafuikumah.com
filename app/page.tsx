@@ -3,7 +3,6 @@ import Link from "@/components/ui/Link";
 import { allPosts } from ".contentlayer/generated";
 
 import PostList from "./blog/components/ui/PostList";
-import Stats from "@/components/Stats";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 import Avatar from "@/public/avatar.png";
 
