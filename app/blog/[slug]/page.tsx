@@ -72,7 +72,7 @@ export default async function Post({ params }: { params: any }) {
 
   // const seoTitle = `${post.title} | Kafui Kumah`;
   // const seoDesc = `${post.summary}`;
-  // const url = `https://b-r.io/blog/${post.slug}`;
+  // const url = `https://kafuikumah.com/blog/${post.slug}`;
   // const MDXContent = useMDXComponent(post?.body.code);
 
   if (!post) {
