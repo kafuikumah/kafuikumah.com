@@ -81,7 +81,7 @@ export default function About() {
             <p>
               In addition to coding, I make the world a better place through
               projects undertaken by my ESG startup,{" "}
-              <Link href="https://koreysustainability.com">
+              <Link href="https://koreysustainability.org">
                 Korey Sustainability
               </Link>
               .
@@ -191,7 +191,7 @@ const workplaces = [
     company: "Korey Sustainability",
     time: "2023 - ",
     imageSrc: korey,
-    link: "https://www.koreysustainability.com/",
+    link: "https://www.koreysustainability.org/",
   },
   {
     title: "Lead Software Developer",
