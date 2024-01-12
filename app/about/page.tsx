@@ -8,6 +8,7 @@ import Workplaces from "./components/Workplaces";
 
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
+import iota from "public/work/iotaLogo.png";
 import korey from "public/work/koreyLogo.png";
 import ibsgh from "public/work/ibsLogo.png";
 import getinnotized from "public/work/gizLogo.png";
@@ -186,6 +187,13 @@ export default function About() {
 }
 
 const workplaces = [
+  {
+    title: "Backend Developer",
+    company: "iOta Digital Lab",
+    time: "2023 - ",
+    imageSrc: iota,
+    link: "https://www.iotadigital.co/",
+  },
   {
     title: "Tech Lead",
     company: "Korey Sustainability",
