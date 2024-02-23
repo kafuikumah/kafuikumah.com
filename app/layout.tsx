@@ -34,7 +34,7 @@ export default function RootLayout({
           <Navigation />
           <div
             className={
-              "mx-auto max-w-[700px] px-6 pb-24 pt-16 md:px-6 md:pb-44 md:pt-20"
+              "mx-auto max-w-[700px] px-4 pb-24 pt-20 ring-offset-primary md:px-6 md:pb-44"
             }
           >
             {children}
