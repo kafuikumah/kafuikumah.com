@@ -6,7 +6,7 @@ import NewsletterSignupForm from "./components/ui/NewsletterSignupForm";
 export const metadata: Metadata = {
   title: "Blog | Kafui Kumah",
   description:
-    "I write about programming, design, and occasionally the tech industry!",
+    "I write about my experience as a developer, founder of many businesses, and more!",
 };
 
 export default function Blog() {
@@ -20,13 +20,13 @@ export default function Blog() {
       <div className="flex flex-col gap-8">
         <div>
           <h1 className="animate-in text-3xl font-bold tracking-tight">Blog</h1>
-          {/* <p
+          <p
             className="animate-in text-secondary"
             style={{ "--index": 1 } as React.CSSProperties}
           >
-            I write about programming, design, and occasionally the tech
-            industry!
-          </p> */}
+            I write about my experience as a developer, founder of many
+            businesses, and more!
+          </p>
         </div>
       </div>
       <div
