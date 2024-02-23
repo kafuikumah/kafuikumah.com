@@ -1,6 +1,9 @@
 import { Metadata } from "next";
 import { allPosts } from ".contentlayer/generated";
 import PostList from "./components/ui/PostList";
+import Input from "./components/ui/Input";
+import { IconSearch } from "./components/ui/Icons";
+
 import NewsletterSignupForm from "./components/ui/NewsletterSignupForm";
 
 export const metadata: Metadata = {
@@ -27,6 +30,19 @@ export default function Blog() {
             I write about my experience as a developer, founder of many
             businesses, and more!
           </p>
+        </div>
+        <div
+          className="animate-in"
+          style={{ "--index": 2 } as React.CSSProperties}
+        >
+          <Input
+            id="search"
+            type="search"
+            placeholder="Search…"
+            // value={search}
+            // onChange={(e) => setSearch(e.target.value)}
+            pfix={<IconSearch className="h-5 w-5 text-secondary" />}
+          />
         </div>
       </div>
       <div
