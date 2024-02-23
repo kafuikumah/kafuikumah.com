@@ -47,7 +47,7 @@ export default function Navigation() {
               </g>
             </g>
           </svg> */}
-          <span>cd ~/</span>
+          <span>index</span>
         </Link>
         <ul className="hidden items-center gap-1 md:flex">
           {links.map((link) => (
