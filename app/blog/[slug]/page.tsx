@@ -94,7 +94,7 @@ export default async function Post({ params }: { params: any }) {
                 alt={`${post.title} post image`}
                 width={700}
                 height={350}
-                className="-ml-6 w-[calc(100%+48px)] max-w-none animate-in md:rounded-lg lg:-ml-16 lg:w-[calc(100%+128px)]"
+                className="-ml-4 w-[calc(100%+32px)] max-w-none border border-primary  md:rounded-xl"
                 style={{ "--index": 2 } as React.CSSProperties}
                 priority
                 quality={100}
