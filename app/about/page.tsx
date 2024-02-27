@@ -73,20 +73,21 @@ export default function About() {
       >
         <Section heading="About" headingAlignment="left">
           <div className="flex flex-col gap-6">
-            <p>Hello world, I&apos;m Kafui Kumah!</p>
-
             <p>
-              I am an innovative entrepreneur and self-taught software engineer
-              dedicated to accessible education, human capacity development in
-              technology and ESG initiatives.
+              Hello world! I&apos;m Kafui Kumah, I am an innovative entrepreneur
+              and self-taught software engineer dedicated to accessible
+              education, human capacity development in technology and ESG
+              initiatives.
             </p>
             <p>
-              In addition to coding, I make the world a better place through
-              projects undertaken by my ESG startup,{" "}
+              In addition to coding, I am a building a Climate Action startup
+              called{" "}
               <Link href="https://koreysustainability.org">
                 Korey Sustainability
               </Link>
-              .
+              , where we help SMEs in the African sub-region with tools &
+              training to run their businesses with the Global Sustainability
+              practices in their operations.
             </p>
             <p>
               When I am not coding up a storm, you can find me exploring new
@@ -98,11 +99,11 @@ export default function About() {
 
         <Section heading="Connect" headingAlignment="left">
           <div className="flex w-full flex-col gap-8">
-            <p>
+            {/* <p>
               Have a question or just want to chat? Feel free to{" "}
               <Link href="mailto:kafui.kofi.kumah@gmail.com">email me</Link>.
               Try finding me anywhere else at @kafuikumah
-            </p>
+            </p> */}
             <ul className="animated-list grid flex-grow grid-cols-1 gap-2 md:grid-cols-2">
               {ConnectLinks.map((link) => (
                 <li className="col-span-1 transition-opacity" key={link.label}>
@@ -148,11 +149,11 @@ export default function About() {
               (then: Roots Digital).
             </p>
             <p>
-              Throughout my career, I have built many startups and projects
-              while dabbling in freelance on the side.
+              Throughout my career, I built many startups and projects while
+              dabbling in freelance on the side.
             </p>
             <p>
-              Now, I&apos;m a backend engineer currently working at{" "}
+              Now, I&apos;m a backend engineer currently working remotely at{" "}
               <Link
                 className="underline"
                 href="https://www.iotadigitallab.com/"
