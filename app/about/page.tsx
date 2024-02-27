@@ -13,6 +13,7 @@ import korey from "public/work/koreyLogo.png";
 import ibsgh from "public/work/ibsLogo.png";
 import getinnotized from "public/work/gizLogo.png";
 import swoove from "public/work/swooveLogo.png";
+import accolm from "public/work/accolmLogo.png";
 
 export const metadata: Metadata = {
   title: "About | Kafui Kumah",
@@ -221,5 +222,12 @@ const workplaces = [
     time: "2018-2020",
     imageSrc: swoove,
     link: "https://www.swoove360.com/",
+  },
+  {
+    title: "Junior Developer",
+    company: "Accolm Ghana",
+    time: "2018-2018",
+    imageSrc: accolm,
+    link: "https://www.accolm.com/site/",
   },
 ];
