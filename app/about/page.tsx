@@ -14,6 +14,8 @@ import ibsgh from "public/work/ibsLogo.png";
 import getinnotized from "public/work/gizLogo.png";
 import swoove from "public/work/swooveLogo.png";
 import accolm from "public/work/accolmLogo.png";
+import nerdion from "public/work/nerdionLogo.png";
+import offweb from "public/work/off-webLogo.png";
 
 export const metadata: Metadata = {
   title: "About | Kafui Kumah",
@@ -75,9 +77,9 @@ export default function About() {
           <div className="flex flex-col gap-6">
             <p>
               Hello world! I&apos;m Kafui Kumah, I am an innovative entrepreneur
-              and self-taught software engineer dedicated to accessible
-              education, human capacity development in technology and ESG
-              initiatives.
+              and self-taught software engineer dedicated to working on and building
+              projects that have a global impact. I do that with my team at{" "}
+              <Link href="https://iotadigital.co/"> Nerdion Systems</Link>.
             </p>
             <p>
               In addition to coding, I am a building a Climate Action startup
@@ -85,9 +87,9 @@ export default function About() {
               <Link href="https://koreysustainability.org">
                 Korey Sustainability
               </Link>
-              , where we help SMEs in the African sub-region with tools &
-              training to run their businesses with the Global Sustainability
-              practices in their operations.
+              , where we help SMEs in the African sub-region with software tools,
+              industry resources & training to run their businesses with the Global
+              Sustainability practices in their operations.
             </p>
             <p>
               When I am not coding up a storm, you can find me exploring new
@@ -153,15 +155,14 @@ export default function About() {
               dabbling in freelance on the side.
             </p>
             <p>
-              Now, I&apos;m a backend engineer currently working remotely at{" "}
+              Now, I&apos;m the executive director of{" "}
               <Link
                 className="underline"
-                href="https://www.iotadigitallab.com/"
+                href="https://nerdionsystems.com/"
               >
-                iOta Digial Lab
+                Nerdion Systems
               </Link>
-              , a software development and product design agency in New York,
-              USA.
+              , building impact projects across the globe.
             </p>
 
             <Workplaces items={workplaces} />
@@ -190,18 +191,32 @@ export default function About() {
 
 const workplaces = [
   {
-    title: "Backend Developer",
-    company: "iOta Digital Lab",
-    time: "2023 - ",
-    imageSrc: iota,
-    link: "https://www.iotadigital.co/",
+    title: "Executive Director",
+    company: "Nerdion",
+    time: "2015 - Present",
+    imageSrc: nerdion,
+    link: "https://www.nerdionsystems.com/",
   },
   {
     title: "Tech Lead",
     company: "Korey Sustainability",
-    time: "2023 - ",
+    time: "2023 - Present",
     imageSrc: korey,
     link: "https://www.koreysustainability.org/",
+  },
+  {
+    title: "Founder, Solo agency",
+    company: "Off-Web",
+    time: "2022 - 2025",
+    imageSrc: offweb,
+    link: "https://www.off-web.com/",
+  },
+  {
+    title: "Backend Developer",
+    company: "iOta Digital Lab",
+    time: "2023 - 2025",
+    imageSrc: iota,
+    link: "https://www.iotadigital.co/",
   },
   {
     title: "Lead Software Developer",

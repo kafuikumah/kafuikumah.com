@@ -46,17 +46,16 @@ export default async function Home() {
           className="max-w-lg animate-in text-primary"
           style={{ "--index": 2 } as React.CSSProperties}
         >
-          Mostly building in python, nodejs, and crafting robust backend systems
-          with a focus on application performance, scalability, application
-          infrastructure and security.
+          I build data platforms and dashboards that help governments,
+          organizations, and research teams understand complex data and
+          make better decisions.
         </p>
         <p
           className="max-w-lg animate-in text-primary"
           style={{ "--index": 2 } as React.CSSProperties}
         >
-          Lately, my interest lies in learning and exploring opportunities that
-          challenge me to grow my problem-solving, communication and writing
-          skills.
+          My work focuses on systems for public finance, health monitoring,
+          climate data, and development tracking across Africa and beyond.
         </p>
 
         {/* <p
