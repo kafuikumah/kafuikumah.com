@@ -1,10 +1,6 @@
 import { Metadata } from "next";
 import { allPosts } from ".contentlayer/generated";
-import PostList from "./components/ui/PostList";
-import Input from "./components/ui/Input";
-import { IconSearch } from "./components/ui/Icons";
-
-import NewsletterSignupForm from "./components/ui/NewsletterSignupForm";
+import BlogSearch from "./components/ui/BlogSearch";
 
 export const metadata: Metadata = {
   title: "Blog | Kafui Kumah",
@@ -31,31 +27,12 @@ export default function Blog() {
             businesses, and more!
           </p>
         </div>
-        <div
-          className="animate-in"
-          style={{ "--index": 2 } as React.CSSProperties}
-        >
-          <Input
-            id="search"
-            type="search"
-            placeholder="Search…"
-            // value={search}
-            // onChange={(e) => setSearch(e.target.value)}
-            pfix={<IconSearch className="h-5 w-5 text-secondary" />}
-          />
-        </div>
       </div>
       <div
         className="animate-in"
         style={{ "--index": 2 } as React.CSSProperties}
       >
-        <PostList posts={posts} />
-      </div>
-      <div
-        className="animate-in"
-        style={{ "--index": 3 } as React.CSSProperties}
-      >
-        {/* <NewsletterSignupForm /> */}
+        <BlogSearch posts={posts} />
       </div>
     </div>
   );
