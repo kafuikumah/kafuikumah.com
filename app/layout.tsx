@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lekton } from "next/font/google";
 import clsx from "clsx";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -9,7 +9,16 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const lekton = Lekton({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-lekton",
+});
 
 export const metadata: Metadata = {
   title: "Home | Kafui Kumah",
@@ -26,8 +35,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={clsx(
-          inter.className,
-          "width-full bg-primary text-primary antialiased",
+          inter.variable,
+          lekton.variable,
+          "font-sans width-full bg-primary text-primary antialiased",
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

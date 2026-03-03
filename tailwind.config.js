@@ -16,6 +16,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-lekton)", "sans-serif"],
+        heading: ["var(--font-inter)", "sans-serif"],
+      },
       textColor: {
         primary: "var(--gray-12)",
         secondary: "var(--gray-11)",

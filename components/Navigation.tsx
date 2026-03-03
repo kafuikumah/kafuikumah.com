@@ -6,15 +6,13 @@ import { useTheme } from "next-themes";
 
 import NavLink from "./ui/NavLink";
 import ThemeSwitcher from "./ThemeSwitcher";
-
+87;
 import { Popover, Transition } from "@headlessui/react";
 import clsx from "clsx";
 
 const links = [
-  // { label: "About", href: "/about" },
-  // { label: "Home", href: "/home" },
+  { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
-  // { label: "Gear", href: "/gear" },
   { label: "Projects", href: "/projects" },
 ];
 
