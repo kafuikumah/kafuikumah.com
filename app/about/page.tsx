@@ -192,7 +192,7 @@ export default function About() {
 const workplaces = [
   {
     title: "Executive Director",
-    company: "Nerdion",
+    company: "Nerdion Systems",
     time: "2015 - Present",
     imageSrc: nerdion,
     link: "https://www.nerdionsystems.com/",
@@ -205,8 +205,8 @@ const workplaces = [
     link: "https://www.koreysustainability.org/",
   },
   {
-    title: "Founder, Solo agency",
-    company: "Off-Web",
+    title: "Founder",
+    company: "Off-Web (solo agency)",
     time: "2022 - 2025",
     imageSrc: offweb,
     link: "https://www.off-web.com/",
