@@ -25,7 +25,7 @@ export default function Navigation() {
       <nav className="mx-auto flex max-w-[700px] items-center justify-between gap-3 px-4 py-3 md:px-6">
         <div className="flex items-center gap-2 md:gap-4">
           <Link href="/" className="shrink-0 text-primary">
-            <span>index</span>
+            <span>Home</span>
           </Link>
           <ul className="hidden items-center gap-1 md:flex">
             {links.map((link) => (

@@ -34,7 +34,7 @@ export default function About() {
           className="animate-in text-secondary"
           style={{ "--index": 1 } as React.CSSProperties}
         >
-          Just a quick glimpse.
+          Summary of my profile and professional interests.
         </p>
       </div>
       {/* <div className="mb-8 lg:hidden">
@@ -139,30 +139,38 @@ export default function About() {
         <Section heading="Work" headingAlignment="left">
           <div className="flex w-full flex-col gap-8">
             <p>
-              {new Date().getFullYear() - 2018}+ years of professional
-              development experience.
+              {new Date().getFullYear() - 2017}+ years of building digital
+              products across startups, agencies, and independent ventures.
             </p>
             <p>
-              I started my career by building a food delivery app called PicApp
-              Foods. Then I worked at{" "}
+              I started with PicApp Foods, a food
+              delivery platform, before joining{" "}
               <Link className="underline" href="https://www.swoove360.com/">
                 Swoove
               </Link>
-              (then: Roots Digital).
+              (formerly Roots Digital)
+              where I sharpened my craft across engineering and product design.
             </p>
             <p>
-              Throughout my career, I built many startups and projects while
-              dabbling in freelance on the side.
+              Since then, I've built and shipped across industries, founding
+              companies, leading freelance engagements, and collaborating with
+              teams across the continent. Every project added a layer of technical
+              depth, design thinking, and a sharper instinct for what makes a
+              product actually work.
             </p>
             <p>
-              Now, I&apos;m the executive director of{" "}
+              Today I run{" "}
               <Link
                 className="underline"
                 href="https://nerdionsystems.com/"
               >
                 Nerdion Systems
               </Link>
-              , building impact projects across the globe.
+              {" "}as Executive Director, where we build data monitoring
+              tools and platforms for international development organizations
+              and governments. Our work reaches institutions across Africa and
+              beyond, tackling some of the most consequential data problems in
+              the world.
             </p>
 
             <Workplaces items={workplaces} />
