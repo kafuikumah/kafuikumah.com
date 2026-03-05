@@ -9,18 +9,16 @@ import Workplaces from "./components/Workplaces";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
 import iota from "public/work/iotaLogo.png";
-import korey from "public/work/koreyLogo.png";
 import ibsgh from "public/work/ibsLogo.png";
 import getinnotized from "public/work/gizLogo.png";
 import swoove from "public/work/swooveLogo.png";
-import accolm from "public/work/accolmLogo.png";
 import nerdion from "public/work/nerdionLogo.png";
 import offweb from "public/work/off-webLogo.png";
 
 export const metadata: Metadata = {
   title: "About | Kafui Kumah",
   description:
-    "I am a full-stack software engineer who basically just enjoys creating things.",
+    "Full-stack software engineer, product designer, and founder of Nerdion Systems with a decade of experience building digital products for startups, agencies, and institutional clients.",
 };
 
 export default function About() {
@@ -34,78 +32,170 @@ export default function About() {
           className="animate-in text-secondary"
           style={{ "--index": 1 } as React.CSSProperties}
         >
-          Summary of my profile and professional interests.
+          Full-stack engineer, product designer, and founder.
         </p>
       </div>
-      {/* <div className="mb-8 lg:hidden">
-        <div
-          className="animate-in"
-          style={{ "--index": 1 } as React.CSSProperties}
-        >
-          <Image
-            src={meLily}
-            alt={"me and lily"}
-            width={324}
-            height={139}
-            className="pointer-events-none relative inset-0 h-60 -rotate-6 rounded-2xl bg-gray-400 object-cover shadow-md"
-            priority
-          />
-        </div>
 
-        <div
-          className="animate-in"
-          style={{ "--index": 2 } as React.CSSProperties}
-        >
-          <Image
-            src={colorado}
-            alt={"me and lily"}
-            width={220}
-            height={260}
-            className="pointer-events-none absolute inset-0 -top-48 left-[45%] w-48 rotate-6 rounded-2xl bg-gray-400 object-cover shadow-md md:left-[60%] md:w-56"
-            priority
-          />
-        </div>
-      </div>
-      <div className="hidden lg:block">
-        <Gallery />
-      </div> */}
       <div
         className="flex animate-in flex-col gap-16 md:gap-24"
         style={{ "--index": 3 } as React.CSSProperties}
       >
+        {/* About */}
         <Section heading="About" headingAlignment="left">
           <div className="flex flex-col gap-6">
             <p>
-              Hello world! I&apos;m Kafui Kumah, I am an innovative entrepreneur
-              and self-taught software engineer dedicated to working on and building
-              projects that have a global impact. I do that with my team at{" "}
-              <Link href="https://iotadigital.co/"> Nerdion Systems</Link>.
+              Hello world! I&apos;m <strong>Kafui Kumah</strong> — a full-stack
+              software engineer, product designer, and web designer with a
+              decade of experience building and deploying digital frontend and
+              backend software infrastructure for startups, agencies, and
+              institutional clients.
             </p>
             <p>
-              In addition to coding, I am a building a Climate Action startup
-              called{" "}
-              <Link href="https://koreysustainability.org">
-                Korey Sustainability
-              </Link>
-              , where we help SMEs in the African sub-region with software tools,
-              industry resources & training to run their businesses with the Global
-              Sustainability practices in their operations.
+              My focus is on developing responsive user interfaces for enhanced
+              user experience, while ensuring security and robust data
+              management. As Founder of{" "}
+              <Link href="https://nerdionsystems.com">Nerdion Systems</Link>, I
+              leverage a wide range of tools and languages to design and develop
+              decision-support tools and innovative solutions for organizations
+              working on consequential challenges — serving both commercial and
+              development sector clients.
             </p>
             <p>
-              When I am not coding up a storm, you can find me exploring new
-              technologies, playing video games, getting lost in a good book or
+              I also run{" "}
+              <Link href="https://off-web.com">Off-Web</Link>, a web design
+              studio where I build conversion-focused websites and digital
+              experiences for businesses across e-commerce, finance,
+              hospitality, and professional services.
+            </p>
+            <p>
+              When I&apos;m not building products, you can find me exploring new
+              technologies, playing video games, getting lost in a good book, or
               geeking out with passionate like-minded people :)
             </p>
           </div>
         </Section>
 
+        {/* Skills */}
+        <Section heading="Skills" headingAlignment="left">
+          <div className="flex flex-col gap-6">
+            <div>
+              <h3 className="font-semibold text-primary mb-1">Frontend</h3>
+              <p className="text-secondary">
+                Next.js · React · TypeScript · Vue.js · Tailwind CSS · Material
+                UI · Chakra UI · JavaScript · jQuery
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-primary mb-1">Backend</h3>
+              <p className="text-secondary">
+                Node.js · Express.js · PHP · Laravel · Symfony · Python
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-primary mb-1">Mobile</h3>
+              <p className="text-secondary">Swift (iOS) · React Native</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-primary mb-1">
+                Database &amp; BaaS
+              </h3>
+              <p className="text-secondary">
+                PostgreSQL · MySQL · MongoDB · SQLite · Supabase · Redis ·
+                Firebase
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-primary mb-1">
+                APIs &amp; Integration
+              </h3>
+              <p className="text-secondary">REST APIs · GraphQL</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-primary mb-1">
+                Design &amp; Tooling
+              </h3>
+              <p className="text-secondary">
+                Figma · Framer · Webflow · WordPress · WIX · Visual Design · UX
+                Design · Interaction Design · User Research · Design Systems ·
+                Wireframing · Prototyping
+              </p>
+            </div>
+          </div>
+        </Section>
+
+        {/* Work Experience */}
+        <Section heading="Work" headingAlignment="left">
+          <div className="flex w-full flex-col gap-8">
+            <p>
+              {new Date().getFullYear() - 2017}+ years of building digital
+              products across startups, agencies, and independent ventures.
+            </p>
+            <p>
+              I started at{" "}
+              <Link className="underline" href="https://gridco.com.gh">
+                GRIDCo
+              </Link>{" "}
+              (Ghana Grid Company) as an Associate Telecommunications Engineer
+              before transitioning into software development at{" "}
+              <Link className="underline" href="https://www.swoove360.com/">
+                Roots Digital (now Swoove)
+              </Link>
+              , where I built iOS apps and sharpened my craft across engineering
+              and product design.
+            </p>
+            <p>
+              Since then, I&apos;ve shipped across industries — from solar energy
+              brokerage platforms in Germany (
+              <Link className="underline" href="https://milkthesun.com">
+                Milk The Sun
+              </Link>
+              ) to full ERP systems, MOOC platforms, and e-commerce sites across
+              Ghana. I&apos;ve led freelance engagements, founded companies, and
+              collaborated with teams across the continent.
+            </p>
+            <p>
+              Today I run{" "}
+              <Link
+                className="underline"
+                href="https://nerdionsystems.com/"
+              >
+                Nerdion Systems
+              </Link>{" "}
+              as Founder, where we build data monitoring tools and platforms for
+              international development organizations and governments. I also
+              lead{" "}
+              <Link className="underline" href="https://off-web.com">
+                Off-Web
+              </Link>
+              , a web design studio with 50+ business clients delivering
+              conversion-focused digital experiences.
+            </p>
+
+            <Workplaces items={workplaces} />
+
+            <ul
+              className="animated-list flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
+              style={{ "--index": 2 } as React.CSSProperties}
+            >
+              <li className="transition-opacity">
+                <a
+                  href="/Kafui_Kumah_CV.pdf"
+                  download="Kafui_Kumah_CV.pdf"
+                  className="flex items-center gap-2 no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  <br />
+                  <br />
+                  <ArrowUpRightIcon className="h-5 w-5" />
+                  <span>Download my full resumé</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </Section>
+
+        {/* Connect */}
         <Section heading="Connect" headingAlignment="left">
           <div className="flex w-full flex-col gap-8">
-            {/* <p>
-              Have a question or just want to chat? Feel free to{" "}
-              <Link href="mailto:kafui.kofi.kumah@gmail.com">email me</Link>.
-              Try finding me anywhere else at @kafuikumah
-            </p> */}
             <ul className="animated-list grid flex-grow grid-cols-1 gap-2 md:grid-cols-2">
               {ConnectLinks.map((link) => (
                 <li className="col-span-1 transition-opacity" key={link.label}>
@@ -135,63 +225,6 @@ export default function About() {
             </ul>
           </div>
         </Section>
-
-        <Section heading="Work" headingAlignment="left">
-          <div className="flex w-full flex-col gap-8">
-            <p>
-              {new Date().getFullYear() - 2017}+ years of building digital
-              products across startups, agencies, and independent ventures.
-            </p>
-            <p>
-              I started with PicApp Foods, a food
-              delivery platform, before joining{" "}
-              <Link className="underline" href="https://www.swoove360.com/">
-                Swoove
-              </Link>
-              (formerly Roots Digital)
-              where I sharpened my craft across engineering and product design.
-            </p>
-            <p>
-              Since then, I've built and shipped across industries, founding
-              companies, leading freelance engagements, and collaborating with
-              teams across the continent. Every project added a layer of technical
-              depth, design thinking, and a sharper instinct for what makes a
-              product actually work.
-            </p>
-            <p>
-              Today I run{" "}
-              <Link
-                className="underline"
-                href="https://nerdionsystems.com/"
-              >
-                Nerdion Systems
-              </Link>
-              {" "}as Executive Director, where we build data monitoring
-              tools and platforms for international development organizations
-              and governments. Our work reaches institutions across Africa and
-              beyond, tackling some of the most consequential data problems in
-              the world.
-            </p>
-
-            <Workplaces items={workplaces} />
-            <ul
-              className="animated-list flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
-              style={{ "--index": 2 } as React.CSSProperties}
-            >
-              <li className="transition-opacity">
-                <Link
-                  href="/about"
-                  className="flex items-center gap-2 no-underline"
-                >
-                  <br />
-                  <br />
-                  <ArrowUpRightIcon className="h-5 w-5" />
-                  <span>Download my full resumé</span>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </Section>
       </div>
     </div>
   );
@@ -199,59 +232,45 @@ export default function About() {
 
 const workplaces = [
   {
-    title: "Executive Director",
+    title: "Founder",
     company: "Nerdion Systems",
-    time: "2015 - Present",
+    time: "Sep 2020 – Present",
     imageSrc: nerdion,
     link: "https://www.nerdionsystems.com/",
   },
   {
-    title: "Tech Lead",
-    company: "Korey Sustainability",
-    time: "2023 - Present",
-    imageSrc: korey,
-    link: "https://www.koreysustainability.org/",
-  },
-  {
-    title: "Founder",
-    company: "Off-Web (solo agency)",
-    time: "2022 - 2025",
+    title: "Founder & Principal Web Designer",
+    company: "Off-Web",
+    time: "May 2024 – Present",
     imageSrc: offweb,
     link: "https://www.off-web.com/",
   },
   {
-    title: "Backend Developer",
-    company: "iOta Digital Lab",
-    time: "2023 - 2025",
-    imageSrc: iota,
-    link: "https://www.iotadigital.co/",
+    title: "Senior UI/UX Designer & Web Developer",
+    company: "Dandelo",
+    time: "Feb 2022 – Oct 2024",
+    imageSrc: getinnotized,
+    link: "https://www.getinnotized.com/",
   },
   {
-    title: "Lead Software Developer",
+    title: "Lead Developer",
     company: "Intelligent Building Solutions",
-    time: "2021 - 2022",
+    time: "Aug 2021 – Jan 2022",
     imageSrc: ibsgh,
     link: "https://www.ibsgh.com/",
   },
   {
     title: "Fullstack Developer",
-    company: "Getinnotized",
-    time: "2019 - 2022",
-    imageSrc: getinnotized,
-    link: "https://www.getinnotized.com//",
+    company: "Milk The Sun (Remote, Germany)",
+    time: "Dec 2019 – Jul 2021",
+    imageSrc: iota,
+    link: "https://www.milkthesun.com/",
   },
   {
-    title: "iOS Developer",
-    company: "Swoove",
-    time: "2018-2020",
+    title: "Software Developer & UI/UX Designer",
+    company: "Roots Digital (Swoove)",
+    time: "Sep 2018 – Nov 2019",
     imageSrc: swoove,
     link: "https://www.swoove360.com/",
-  },
-  {
-    title: "Junior Developer",
-    company: "Accolm Ghana",
-    time: "2018-2018",
-    imageSrc: accolm,
-    link: "https://www.accolm.com/site/",
   },
 ];

@@ -1,5 +1,7 @@
 const API_SECRET = process.env.CONVERTKIT_API_SECRET;
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   // Endpoint
   // GET /v3/subscribers
