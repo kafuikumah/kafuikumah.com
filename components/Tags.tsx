@@ -5,7 +5,7 @@ type TagsProps = {
   tags: string[];
 };
 
-const Tags = ({ tags }: TagsProps): JSX.Element | null => {
+const Tags = ({ tags }: TagsProps): React.JSX.Element | null => {
   if (!tags?.length) {
     return null;
   }

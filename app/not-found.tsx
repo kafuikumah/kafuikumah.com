@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Uh oh! This page does not exist",
 };
 
-const Custom404 = (): JSX.Element => (
+const Custom404 = (): React.JSX.Element => (
   <div className="flex flex-col gap-2">
     <h1>404 - Page not found</h1>
     <p className="text-secondary">

@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import "@radix-ui/colors/gray.css";
 @import "@radix-ui/colors/gray-alpha.css";
 @import "@radix-ui/colors/gray-dark.css";
@@ -16,6 +12,10 @@
 @import "@radix-ui/colors/blue-alpha.css";
 
 @import "@/public/prism/one-dark.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   :root {
@@ -268,15 +268,6 @@ pre[class*="language-"] {
   /* Set highlight bg color */
   border-left: 2px solid var(--blue-10);
   /* Set highlight accent border color */
-}
 
-.line-number::before {
-  display: inline-block;
-  width: 1rem;
-  text-align: right;
-  margin-right: 24px;
-  margin-left: -8px;
-  color: var(--gray-8);
-  /* Line number color */
-  content: attr(line);
+
 }

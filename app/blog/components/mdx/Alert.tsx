@@ -10,7 +10,7 @@ const Alert = ({
 }: {
   children: ReactNode;
   type: "warning" | "info";
-}): JSX.Element => (
+}): React.JSX.Element => (
   <div className="flex gap-2 p-4 rounded-md mt-7 bg-primary border border-secondary">
     <div className="w-fit">
       {type === "warning" ? (

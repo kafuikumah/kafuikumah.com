@@ -20,7 +20,7 @@ const Parallax = ({
   offset = 50,
   clampInitial,
   clampFinal,
-}: ParallaxProps): JSX.Element => {
+}: ParallaxProps): React.JSX.Element => {
   const prefersReducedMotion = useReducedMotion();
   const [elementTop, setElementTop] = useState(0);
   const [clientHeight, setClientHeight] = useState(0);
@@ -44,7 +44,7 @@ const Parallax = ({
       setElementTop(
         /* @ts-ignore-next */
         element.getBoundingClientRect().top + window.scrollY ||
-          window.pageYOffset
+        window.pageYOffset
       );
       setClientHeight(window.innerHeight);
     };
