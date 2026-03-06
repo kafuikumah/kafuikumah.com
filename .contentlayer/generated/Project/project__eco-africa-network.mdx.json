@@ -1,0 +1,27 @@
+{
+  "title": "Eco Africa Network",
+  "time": "2026",
+  "description": "A comprehensive website refresh for Eco Africa Network featuring an impact tracker, growth progress sharing, a volunteer portal, and an e-commerce platform.",
+  "url": "https://ecoafricanetwork.org/",
+  "tags": [
+    "Next.js",
+    "TypeScript",
+    "E-commerce",
+    "Volunteer Portal",
+    "Web Development"
+  ],
+  "body": {
+    "raw": "\n## Project Overview\n\nEco Africa Network required a complete digital transformation to better communicate their environmental impact and facilitate community engagement. The project involved rebuilding their web presence from the ground up to support their multifaceted operations, including advocacy, community building, and sustainable commerce.\n\n## Core Features\n\n- **Impact Communication Dashboard**: A visual interface dedicated to sharing real-time data on environmental progress and organizational milestones.\n- **Growth & Progress Tracking**: Tools for stakeholders to monitor the network's expansion and project success across various regions.\n- **Volunteer Portal**: A centralized system for managing volunteer applications, onboarding, and coordination of grassroots activities.\n- **Integrated E-commerce**: A custom-built shop allowing the organization to sell sustainable products and merchandise to fund their operations.\n- **Responsive Design**: A modern, high-performance interface optimized for both desktop and mobile users in varied connectivity environments.\n\n## Development\n\nThe entire platform was designed and developed within a rapid one-month timeframe, focusing on a clean aesthetic that reflects the organization's environmental mission while maintaining robust functionality for its diverse user base.\n",
+    "code": "var Component=(()=>{var h=Object.create;var i=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var v=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),b=(n,e)=>{for(var r in e)i(n,r,{get:e[r],enumerable:!0})},s=(n,e,r,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of p(e))!f.call(n,o)&&o!==r&&i(n,o,{get:()=>e[o],enumerable:!(a=u(e,o))||a.enumerable});return n};var w=(n,e,r)=>(r=n!=null?h(g(n)):{},s(e||!n||!n.__esModule?i(r,\"default\",{value:n,enumerable:!0}):r,n)),x=n=>s(i({},\"__esModule\",{value:!0}),n);var l=v((A,c)=>{c.exports=_jsx_runtime});var k={};b(k,{default:()=>m,frontmatter:()=>j});var t=w(l()),j={title:\"Eco Africa Network\",time:\"2026\",description:\"A comprehensive website refresh for Eco Africa Network featuring an impact tracker, growth progress sharing, a volunteer portal, and an e-commerce platform.\",url:\"https://ecoafricanetwork.org/\",tags:[\"Next.js\",\"TypeScript\",\"E-commerce\",\"Volunteer Portal\",\"Web Development\"]};function d(n){let e={h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...n.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.h2,{children:\"Project Overview\"}),`\n`,(0,t.jsx)(e.p,{children:\"Eco Africa Network required a complete digital transformation to better communicate their environmental impact and facilitate community engagement. The project involved rebuilding their web presence from the ground up to support their multifaceted operations, including advocacy, community building, and sustainable commerce.\"}),`\n`,(0,t.jsx)(e.h2,{children:\"Core Features\"}),`\n`,(0,t.jsxs)(e.ul,{children:[`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Impact Communication Dashboard\"}),\": A visual interface dedicated to sharing real-time data on environmental progress and organizational milestones.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Growth & Progress Tracking\"}),\": Tools for stakeholders to monitor the network's expansion and project success across various regions.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Volunteer Portal\"}),\": A centralized system for managing volunteer applications, onboarding, and coordination of grassroots activities.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Integrated E-commerce\"}),\": A custom-built shop allowing the organization to sell sustainable products and merchandise to fund their operations.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Responsive Design\"}),\": A modern, high-performance interface optimized for both desktop and mobile users in varied connectivity environments.\"]}),`\n`]}),`\n`,(0,t.jsx)(e.h2,{children:\"Development\"}),`\n`,(0,t.jsx)(e.p,{children:\"The entire platform was designed and developed within a rapid one-month timeframe, focusing on a clean aesthetic that reflects the organization's environmental mission while maintaining robust functionality for its diverse user base.\"})]})}function m(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,{...n,children:(0,t.jsx)(d,{...n})}):d(n)}return x(k);})();\n;return Component;"
+  },
+  "_id": "project/eco-africa-network.mdx",
+  "_raw": {
+    "sourceFilePath": "project/eco-africa-network.mdx",
+    "sourceFileName": "eco-africa-network.mdx",
+    "sourceFileDir": "project",
+    "contentType": "mdx",
+    "flattenedPath": "project/eco-africa-network"
+  },
+  "type": "Project",
+  "slug": "eco-africa-network"
+}
