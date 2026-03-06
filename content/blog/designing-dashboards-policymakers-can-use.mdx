@@ -1,0 +1,110 @@
+---
+title: "Designing Dashboards That Policymakers Can Actually Use"
+publishedAt: "2023-01-18"
+summary: "A dashboard that a minister cannot interpret in thirty seconds is not a decision support tool."
+shortTitle: "Designing Actionable Dashboards"
+---
+
+Most dashboards are designed for the person who built them.
+
+They reflect the builder's mental model of the data, organized around the data structure rather than the decisions the user needs to make. They assume familiarity with the indicators, with the context, and with basic data literacy concepts — assumptions that hold for a data analyst and fail almost immediately for a government minister, a program director, or a country representative who needs to be briefed quickly and act decisively.
+
+The result is a persistent and expensive gap between what dashboards contain and what the people who most need them can extract from them. A dashboard packed with well-maintained, accurate data that a minister cannot navigate in under two minutes is a failure, regardless of its technical quality.
+
+This is not primarily a technical problem. It is a design problem — and specifically, a problem of designing for the wrong user.
+
+---
+
+## The Core Principle: Design for the Decision, Not the Data
+
+The starting question for any dashboard design process should not be: "What data do we have?"
+
+It should be: "What decisions does this person need to make, and what information would change the quality of those decisions?"
+
+These are fundamentally different questions, and they lead to fundamentally different designs.
+
+Designing from the data leads to dashboards that are comprehensive and usable by people who already understand the data — which typically means the analysts and technical staff who built the system, not the senior officials who are supposed to use it.
+
+Designing from the decision leads to dashboards that surface the specific information needed for specific choices — and nothing else. The result is more constrained, more opinionated, and dramatically more useful to the person making the call.
+
+A minister of agriculture deciding how to allocate emergency drought support across regions does not need a dashboard showing all 47 agricultural indicators. She needs a clear geographic view of drought severity by region, a population-at-risk estimate for each area, a summary of available support resources, and a recent trend showing whether conditions are improving or deteriorating. Five data points. One clear picture. Action-ready.
+
+---
+
+## Principle 1: Radical Simplicity
+
+The temptation in dashboard design is addition. Every stakeholder wants their indicator included. Every department wants their data visible. The resulting dashboard is comprehensive, unusable, and used by nobody except the people who know where to look.
+
+Good dashboard design for policy environments requires discipline about subtraction. The question is not "what can we add?" but "what is the minimum information that enables this decision?" And then: "if we could only show three things, what would they be?"
+
+This is not a compromise. It is the design. A dashboard with three well-chosen indicators that a minister consults every Monday morning is more valuable than a dashboard with eighty indicators that gets opened twice a year.
+
+The supporting detail — the additional indicators, the underlying data, the historical depth — should exist, but it should be accessible, not foregrounded. The hierarchy is: summary status on the primary view, supporting detail one click down, full data access for analysts below that.
+
+---
+
+## Principle 2: Status Before Data
+
+Policymakers need to know, immediately upon opening a dashboard, whether things are on track or whether something requires their attention. They should not need to interpret a number to arrive at that assessment.
+
+Traffic-light systems, variance-from-target indicators, and trend arrows do this work. They translate quantitative values into a small vocabulary of status signals — on track, at risk, off track, improving, declining — that can be read in seconds without statistical literacy.
+
+The precise numbers remain important and should be accessible. But the signal — the qualitative assessment of what the numbers mean in the context of targets and trends — should be foregrounded.
+
+A district showing 43% immunization coverage does not tell a minister what she needs to know unless she knows the target is 95%, that the district was at 38% last quarter, and that three neighboring districts are above 80%. When a dashboard encodes all of that context in a single red-amber-green indicator with a trend arrow, the assessment is instant.
+
+---
+
+## Principle 3: Indicator Prioritization Based on Policy Relevance
+
+Not all indicators are equally important to all users, and the indicators a dashboard foregrounds should be determined by what matters most to the specific decisions and accountability relationships of that user.
+
+A head of state briefing needs headline figures for the most politically salient domains — economic growth, job creation, food security, and a small number of flagship program outcomes. A sector minister needs the key performance indicators of their ministry's mandate, disaggregated by region. A district officer needs operational indicators for their district.
+
+The worst dashboards treat all indicators as equally important by default. The best dashboards are structured around explicit indicator hierarchies: these are the three things you must know; these are the ten things you should know if you have ten minutes; this is everything else.
+
+Building these hierarchies requires genuine engagement with users — not just asking "what data do you want?" but observing how decisions are actually made, what questions get asked in key meetings, and what information gaps cause the most friction.
+
+---
+
+## Principle 4: Clear Trend Visualization
+
+Static values — a single number representing current status — are less useful for decision-making than trend values. The number 47 means something very different depending on whether it was 35 last quarter and 22 the quarter before (rapidly improving) or 58 last quarter and 64 the quarter before (rapidly declining).
+
+Trend visualization should be built into the primary view of every key indicator, not relegated to a detail page. The visual encoding should make the direction immediately clear: upward lines in green for indicators where improvement means increase, downward lines in red for indicators where current direction means deterioration, with clear target references showing how the trend relates to where it needs to go.
+
+The time window for trend visualization should match the decision cycle. Operational indicators reviewed weekly benefit from 12-week trend lines. Strategic indicators reviewed quarterly benefit from 24-month trends. Annual planning exercises need multi-year historical context.
+
+---
+
+## Principle 5: Actionable Insight Design
+
+The most sophisticated dashboards go one step further than visualization: they are designed to surface insights, not just data, and to connect those insights to action.
+
+An insight is not a data point. It is an interpretation: "District X is the only region in the country where child vaccination rates are both below target and declining — and they have been declining for three consecutive quarters."
+
+A data point requires the user to make that interpretation. An insight delivers it, reducing the cognitive load and response latency. The user can move immediately from "what is the situation?" to "what should we do?"
+
+Actionable design takes this one step further: the insight is connected to the relevant protocol, the responsible team, or the response option. When a food security threshold is breached in a district, the dashboard does not just display the alert — it surfaces the pre-approved response protocol, the logistics team contact, and the pre-positioned resource inventory.
+
+This level of design sophistication requires deep knowledge of both the data and the decision-making process. It is the reason that the best decision support platforms are built collaboratively with the users they serve, not delivered to them as finished products.
+
+---
+
+## The User Testing Requirement
+
+No amount of design expertise substitutes for direct observation of the intended users interacting with the dashboard.
+
+The most revealing question in dashboard evaluation is not "what do you think of this?" It is: "show me how you would use this to answer [a specific question relevant to your work]." Watch what they click. Notice where they hesitate. Ask what they expected to find and where they were confused.
+
+Dashboard design for policy environments should go through at least three rounds of iterative user testing — ideally with the actual users: ministers, program directors, district officers — before any version is considered complete. The insights that emerge from watching a minister attempt to navigate a dashboard they have never seen before are consistently more valuable than any amount of internal review.
+
+---
+
+The dashboards that change how governments work are not the ones with the most data or the most sophisticated technology. They are the ones that understand what their users need to know, strip away everything else, and make the critical information impossible to miss.
+
+That is a design challenge, and it is solvable. The cost of not solving it is dashboards that sit unused while the decisions that should be informed by data are made by instinct instead.
+
+---
+
+*Nerdion Systems designs decision-intelligence platforms and data dashboards built specifically for policymakers, program directors, and public sector decision-makers. Based in Accra, Ghana. info@nerdionsystems.com*

@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@import "@radix-ui/colors/gray.css";
+@import "@radix-ui/colors/gray-alpha.css";
+@import "@radix-ui/colors/gray-dark.css";
+@import "@radix-ui/colors/gray-dark-alpha.css";
+
+@import "@radix-ui/colors/jade.css";
+@import "@radix-ui/colors/jade-alpha.css";
+@import "@radix-ui/colors/jade-dark.css";
+@import "@radix-ui/colors/jade-dark-alpha.css";
+
+@import "@radix-ui/colors/blue.css";
+@import "@radix-ui/colors/blue-alpha.css";
+
+@theme {
+  --font-sans: var(--font-lekton), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--gray-1);
+  --color-foreground: var(--gray-12);
+
+  --color-primary: var(--gray-12);
+  --color-secondary: var(--gray-11);
+  --color-tertiary: var(--gray-9);
+  --color-brand: #6166dc;
+}
+
+.terminal {
+  --bg: #010e11;
+  --boxBg: rgba(0, 245, 196, 0.1);
+  --brand: #00f5c4;
+  --brandTinted: rgba(0, 245, 196, 0.1);
+  --color-background: #010e11;
+  --color-foreground: #00f5c4;
+  --color-primary: #00f5c4;
+  --color-secondary: rgba(0, 245, 196, 0.7);
+  --color-tertiary: rgba(0, 245, 196, 0.5);
+  --gray-1: #010e11;
+  --gray-2: #021a1e;
+  --gray-3: #03262c;
+  --gray-4: #04323a;
+  --gray-5: #053e48;
+  --gray-6: #064a56;
+  --gray-7: #075664;
+  --gray-8: #086272;
+  --gray-9: #00f5c4;
+  --gray-10: #00f5c4;
+  --gray-11: #00f5c4;
+  --gray-12: #00f5c4;
+}
+
+:root {
+  --bg: var(--gray-1);
+  --boxBg: var(--gray-4);
+  --brand: #6166dc;
+  --brandTinted: #6165dc1f;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--color-primary);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@keyframes in {
+  0% {
+    transform: translateY(18px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-in {
+  animation: in 0.6s both;
+  animation-delay: calc(var(--index) * 130ms);
+}
