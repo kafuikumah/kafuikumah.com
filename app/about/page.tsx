@@ -31,19 +31,17 @@ export default function About() {
       <div className="flex flex-col gap-16 md:gap-24 animate-in" style={{ "--index": 2 } as React.CSSProperties}>
         <Section heading="About">
           <p>
-            Hello world! I'm <strong>Kafui Kumah</strong> — a full-stack
-            software engineer, product designer, and web designer with a
-            decade of experience building and deploying digital frontend and
-            backend software infrastructure for startups, agencies, and
-            institutional clients.
+            Hello world! I'm <strong>Kafui Kumah</strong>, a software engineering
+            consultant with over a decade of experience building and deploying
+            software for startups, global agencies, and institutional clients
+            across Africa and international markets.
           </p>
           <p>
-            My focus is on developing responsive user interfaces for enhanced
-            user experience, while ensuring security and robust data
-            management. As Founder of{" "}
+            My focus is on building scalable and robust software solutions for
+            businesses and organizations. As Founder of{" "}
             <a href="https://nerdionsystems.com" className="underline underline-offset-4 hover:text-secondary">Nerdion Systems</a>, I
-            leverage a wide range of tools and languages to design and develop
-            decision-support tools and innovative solutions for organizations
+            leverage a wide range of tools to design and develop
+            decision-support tools, data monitoring tools, and innovative solutions for organizations
             working on consequential challenges — serving both commercial and
             development sector clients.
           </p>
@@ -54,7 +52,7 @@ export default function About() {
             hospitality, and professional services.
           </p>
           <p>
-            When I'm not building products, you can find me exploring new
+            When I'm not coding up a storm, you can find me exploring new
             technologies, playing video games, getting lost in a good book, or
             geeking out with passionate like-minded people :)
           </p>

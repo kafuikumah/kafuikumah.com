@@ -19,7 +19,13 @@ const lekton = Lekton({
 
 export const metadata: Metadata = {
   title: "Kafui Kumah",
-  description: "Software Engineer · Product Designer · Founder",
+  description: "Software Engineering Consultant",
+  icons: {
+    icon: "/avatar.png",
+  },
+  openGraph: {
+    images: [{ url: "/og-bg.png" }],
+  },
 };
 
 export default function RootLayout({

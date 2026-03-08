@@ -17,14 +17,14 @@ export default function Home() {
             Kafui Kumah
           </h1>
           <p className="text-secondary font-heading">
-            Full-Stack Engineer · Product Designer · Founder
+            Software Engineer & Consultant · Founder of <a href="https://nerdionsystems.com" target="_blank" className="underline underline-offset-4 hover:text-secondary transition-colors">Nerdion Systems</a>
           </p>
         </div>
 
         <p className="max-w-lg text-primary">
-          Full-stack software engineer and product designer with a decade of
-          experience building digital products for startups, agencies, and
-          institutional clients across Africa and beyond.
+          Ten years of experience engineering scalable infrastructure and
+          high-impact digital solutions for startups, global agencies, and
+          institutional clients across Africa and international markets.
         </p>
 
         <p className="max-w-lg text-primary">
@@ -37,7 +37,7 @@ export default function Home() {
             Nerdion Systems
           </a>
           , I design and develop decision-support tools and data intelligence
-          platforms for governments, international development organizations,
+          platforms for impact-driven organizations, development organizations,
           and institutional clients.
         </p>
 
