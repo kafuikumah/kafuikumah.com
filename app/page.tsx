@@ -17,7 +17,7 @@ export default function Home() {
             Kafui Kumah
           </h1>
           <p className="text-secondary font-heading">
-            Software Engineer & Consultant · Founder of <a href="https://nerdionsystems.com" target="_blank" className="underline underline-offset-4 hover:text-secondary transition-colors">Nerdion Systems</a>
+            Software Engineering Consultant · Founder of <a href="https://nerdionsystems.com" target="_blank" className="underline underline-offset-4 hover:text-secondary transition-colors">Nerdion Systems</a>
           </p>
         </div>
 

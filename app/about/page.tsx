@@ -4,7 +4,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
 export const metadata: Metadata = {
   title: "About | Kafui Kumah",
-  description: "Full-stack software engineer, product designer, and founder of Nerdion Systems.",
+  description: "Software Engineering Consultant and Founder of Nerdion Systems.",
 };
 
 function Section({ heading, children }: { heading: string; children: React.ReactNode }) {
@@ -25,7 +25,7 @@ export default function About() {
     <div className="flex flex-col gap-16 md:gap-24">
       <div className="animate-in" style={{ "--index": 1 } as React.CSSProperties}>
         <h1 className="text-3xl font-bold tracking-tight text-primary font-heading">About Me</h1>
-        <p className="text-secondary">Full-stack engineer, product designer, and founder.</p>
+        <p className="text-secondary">Software Engineering Consultant • Building Nerdion Systems</p>
       </div>
 
       <div className="flex flex-col gap-16 md:gap-24 animate-in" style={{ "--index": 2 } as React.CSSProperties}>
