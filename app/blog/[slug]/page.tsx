@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Mdx } from "@/components/mdx/Mdx";
 import { formatDate } from "@/lib/formatDate";
 import Link from "next/link";
+import { PostIllustration } from "@/components/illustrations/Post";
 import { ChevronLeftIcon } from "@heroicons/react/20/solid";
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -18,18 +19,27 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         Back to Blog
       </Link>
       
-      <div className="flex flex-col gap-2">
+      <header className="flex flex-col gap-4">
         <h1 className="text-4xl font-bold tracking-tight text-primary font-heading leading-tight">
           {post.title}
         </h1>
-        <time className="text-secondary text-sm">
-          {formatDate(post.publishedAt)}
-        </time>
-      </div>
+        <p className="text-secondary text-lg leading-relaxed">{post.summary}</p>
+        <div className="flex items-center gap-2 text-tertiary text-sm">
+          <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+          <span aria-hidden>·</span>
+          <span>{readingTime(post.body.raw)} min read</span>
+        </div>
+      </header>
+
+      <PostIllustration slug={post.slug} />
 
       <Mdx code={post.body.code} />
     </div>
   );
+}
+
+function readingTime(text: string) {
+  return Math.max(1, Math.round(text.split(/\s+/).length / 225));
 }
 
 export async function generateStaticParams() {

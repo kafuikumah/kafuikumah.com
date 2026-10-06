@@ -2,6 +2,7 @@ import { allProjects } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { Mdx } from "@/components/mdx/Mdx";
 import Link from "next/link";
+import { ProjectIllustration } from "@/components/illustrations/Iso";
 import { ChevronLeftIcon, ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -24,7 +25,21 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           </h1>
           <p className="text-secondary text-lg leading-relaxed max-w-2xl">{project.description}</p>
         </div>
+
+        <div className="aspect-video overflow-hidden bg-[var(--gray-2)] border border-primary/10 p-6 md:p-10">
+          <ProjectIllustration slug={project.slug} />
+        </div>
         
+        {project.tags && project.tags.length > 0 && (
+          <ul className="flex flex-wrap gap-2">
+            {project.tags.map((tag) => (
+              <li key={tag} className=" border border-primary/10 px-3 py-1 text-xs text-secondary">
+                {tag}
+              </li>
+            ))}
+          </ul>
+        )}
+
         <div className="flex items-center justify-between gap-4 border-y border-primary/10 py-4 my-2">
           <span className="text-tertiary font-medium">{project.time}</span>
           <a

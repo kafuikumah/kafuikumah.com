@@ -31,30 +31,25 @@ export default function About() {
       <div className="flex flex-col gap-16 md:gap-24 animate-in" style={{ "--index": 2 } as React.CSSProperties}>
         <Section heading="About">
           <p>
-            Hello world! I'm <strong>Kafui Kumah</strong>, a software engineering
-            consultant with over a decade of experience building and deploying
-            software for startups, global agencies, and institutional clients
-            across Africa and international markets.
+            I'm <strong>Kafui Kumah</strong>, a software engineering consultant
+            with over a decade of experience building and deploying software
+            for startups, global agencies, and institutional clients across
+            Africa and international markets.
           </p>
           <p>
-            My focus is on building scalable and robust software solutions for
-            businesses and organizations. As Founder of{" "}
+            As Founder of{" "}
             <a href="https://nerdionsystems.com" className="underline underline-offset-4 hover:text-secondary">Nerdion Systems</a>, I
-            leverage a wide range of tools to design and develop
-            decision-support tools, data monitoring tools, and innovative solutions for organizations
-            working on consequential challenges — serving both commercial and
-            development sector clients.
+            lead the design and development of decision-support tools and data
+            intelligence platforms for development organizations, governments,
+            and institutional clients working on consequential challenges.
           </p>
           <p>
-            I also run <a href="https://off-web.com" className="underline underline-offset-4 hover:text-secondary">Off-Web</a>, a web design
-            studio where I build conversion-focused websites and digital
-            experiences for businesses across e-commerce, finance,
-            hospitality, and professional services.
-          </p>
-          <p>
-            When I'm not coding up a storm, you can find me exploring new
-            technologies, playing video games, getting lost in a good book, or
-            geeking out with passionate like-minded people :)
+            Today, most of my work is building monitoring and evaluation
+            platforms for continental and development agencies across Africa.
+            These are tools that bring together data from dozens of countries to make
+            some of the continent's biggest challenges, from sovereign debt to
+            health financing, visible and actionable for the people
+            shaping policy.
           </p>
         </Section>
 
@@ -125,38 +120,50 @@ export default function About() {
 
 const workplaces = [
   {
+    title: "Senior Software Engineering Consultant",
+    company: "African Union Commission, Ethiopia",
+    time: "Jun 2026 – Present",
+    logo: "/work/auLogo.png",
+  },
+  {
+    title: "Senior Software Engineering Consultant",
+    company: "The African Renaissance Trust, Kenya",
+    time: "Mar 2026 – Present",
+    logo: "/work/artLogo.png",
+  },
+  {
     title: "Founder",
-    company: "Nerdion Systems",
+    company: "Nerdion Systems, Ghana, UK",
     time: "Sep 2020 – Present",
     logo: "/work/nerdionLogo.png",
   },
   {
     title: "Founder & Principal Web Designer",
-    company: "Off-Web",
-    time: "May 2024 – Present",
+    company: "Off-Web, UAE, USA, Ghana",
+    time: "May 2024 – Nov 2025",
     logo: "/work/off-webLogo.png",
   },
   {
     title: "Senior UI/UX Designer & Web Developer",
-    company: "Dandelo",
+    company: "Dandelo, Ghana",
     time: "Feb 2022 – Oct 2024",
     logo: "/work/dandelo.png",
   },
   {
     title: "Lead Developer",
-    company: "Intelligent Building Solutions",
+    company: "Intelligent Building Solutions, Ghana",
     time: "Aug 2021 – Jan 2022",
     logo: "/work/ibsLogo.png",
   },
   {
     title: "Fullstack Developer",
-    company: "Milk The Sun (Remote, Germany)",
+    company: "Milk The Sun, Germany",
     time: "Dec 2019 – Jul 2021",
     logo: "/work/milk-the-sun.jpg",
   },
   {
     title: "Software Developer & UI/UX Designer",
-    company: "Roots Digital (Swoove)",
+    company: "Roots Digital (Swoove), Ghana",
     time: "Sep 2018 – Nov 2019",
     logo: "/work/swooveLogo.png",
   },

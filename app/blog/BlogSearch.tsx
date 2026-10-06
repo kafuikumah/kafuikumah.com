@@ -14,9 +14,9 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
 
     return (
         <div className="flex flex-col gap-12">
-            <div className="relative group max-w-sm">
+            <div className="relative w-full">
                 <svg
-                    className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-tertiary group-focus-within:text-primary transition-colors"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-tertiary"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -32,7 +32,7 @@ export default function BlogSearch({ posts }: { posts: Post[] }) {
                 <input
                     type="text"
                     placeholder="Search blog..."
-                    className="w-full bg-secondary/20 rounded-full pl-11 pr-4 py-3 outline-none focus:ring-2 ring-primary/20 transition-all text-sm border border-primary/10 font-sans"
+                    className="w-full bg-[var(--gray-3)] pl-11 pr-4 py-3 outline-none focus:outline-none text-sm font-sans"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                 />

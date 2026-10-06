@@ -33,7 +33,7 @@ export function Mdx({ code }: { code: string }) {
     const Component = useMDXComponent(code);
 
     return (
-        <article className="prose prose-neutral dark:prose-invert max-w-none prose-headings:font-heading prose-headings:tracking-tight prose-a:no-underline prose-pre:bg-tertiary/50 prose-pre:border prose-pre:border-primary/10">
+        <article className="prose max-w-none prose-headings:font-heading prose-headings:tracking-tight prose-a:no-underline prose-pre:border prose-pre:border-primary/10">
             <Component components={components} />
         </article>
     );

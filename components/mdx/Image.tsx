@@ -7,7 +7,7 @@ interface CustomImageProps extends ImageProps {
 export function Image({ caption, alt, ...props }: CustomImageProps) {
     return (
         <figure className="my-10 space-y-3">
-            <div className="overflow-hidden rounded-xl border border-primary/10">
+            <div className="overflow-hidden border border-primary/10">
                 <NextImage
                     {...props}
                     alt={alt}

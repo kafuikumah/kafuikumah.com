@@ -17,9 +17,8 @@ export default function Links() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-xl bg-tertiary p-4 hover:bg-secondary transition-colors"
+              className="flex items-center gap-3 bg-tertiary p-4 hover:bg-secondary transition-colors"
             >
-              <span className="text-xl">{link.icon}</span>
               <span className="font-medium text-primary flex-1">{link.label}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

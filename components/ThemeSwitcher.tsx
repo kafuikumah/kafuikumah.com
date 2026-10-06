@@ -22,7 +22,7 @@ export default function ThemeSwitcher() {
         <Listbox value={theme} onChange={setTheme}>
             {({ open }) => (
                 <div className="relative">
-                    <Listbox.Button className="relative w-8 h-8 rounded-full flex items-center justify-center hover:bg-secondary transition-colors focus:outline-none">
+                    <Listbox.Button className="relative w-8 h-8 flex items-center justify-center hover:bg-secondary transition-colors focus:outline-none">
                         {resolvedTheme === "dark" ? (
                             <MoonIcon className="w-5 h-5 text-primary" />
                         ) : (
@@ -37,7 +37,7 @@ export default function ThemeSwitcher() {
                                 initial={{ opacity: 0, scale: 0.95, y: -10 }}
                                 animate={{ opacity: 1, scale: 1, y: 0 }}
                                 exit={{ opacity: 0, scale: 0.95, y: -10 }}
-                                className="absolute right-0 mt-2 w-40 origin-top-right rounded-2xl bg-[#0a0a0a] p-2 shadow-2xl ring-1 ring-white/10 focus:outline-none z-50 overflow-hidden font-sans border border-white/5"
+                                className="absolute right-0 mt-2 w-40 origin-top-right bg-[#0a0a0a] p-2 shadow-2xl ring-1 ring-white/10 focus:outline-none z-50 overflow-hidden font-sans border border-white/5"
                             >
                                 {uniqueThemes.map((t) => (
                                     <Listbox.Option
@@ -45,7 +45,7 @@ export default function ThemeSwitcher() {
                                         value={t}
                                         className={({ active, selected }) =>
                                             clsx(
-                                                "group flex w-full items-center gap-3 rounded-xl py-2.5 px-3 select-none cursor-pointer transition-all",
+                                                "group flex w-full items-center gap-3 py-2.5 px-3 select-none cursor-pointer transition-all",
                                                 active || selected ? "bg-white/10" : "hover:bg-white/5"
                                             )
                                         }

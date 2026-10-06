@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Project } from "contentlayer/generated";
 import Link from "next/link";
+import { ProjectIllustration } from "@/components/illustrations/Iso";
 
 export default function ProjectSearch({ projects }: { projects: Project[] }) {
   const [query, setQuery] = useState("");
@@ -15,9 +16,9 @@ export default function ProjectSearch({ projects }: { projects: Project[] }) {
 
   return (
     <div className="flex flex-col gap-12">
-      <div className="relative group max-w-sm">
+      <div className="relative w-full">
         <svg
-          className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-tertiary group-focus-within:text-primary transition-colors"
+          className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-tertiary"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -33,7 +34,7 @@ export default function ProjectSearch({ projects }: { projects: Project[] }) {
         <input
           type="text"
           placeholder="Search projects..."
-          className="w-full bg-secondary/20 rounded-full pl-11 pr-4 py-3 outline-none focus:ring-2 ring-primary/20 transition-all text-sm border border-primary/10"
+          className="w-full bg-[var(--gray-3)] pl-11 pr-4 py-3 outline-none focus:outline-none text-sm"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
@@ -42,9 +43,8 @@ export default function ProjectSearch({ projects }: { projects: Project[] }) {
       <div className="grid grid-cols-1 gap-12">
         {filteredProjects.map((project, i) => (
           <Link key={project.slug} href={`/projects/${project.slug}`} className="group flex flex-col md:flex-row gap-8 items-start">
-            <div className="relative w-full md:w-64 aspect-video shrink-0 rounded-xl overflow-hidden bg-secondary/10 border border-primary/5">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
-              {/* Note: In a real app we'd use project.thumbnail if available */}
+            <div className="relative w-full md:w-64 aspect-video shrink-0 overflow-hidden bg-[var(--gray-2)] border border-primary/10 p-3">
+              <ProjectIllustration slug={project.slug} />
             </div>
             <div className="flex-1 flex flex-col gap-2">
               <div className="flex flex-col gap-1">

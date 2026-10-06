@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @import "@radix-ui/colors/gray.css";
 @import "@radix-ui/colors/gray-alpha.css";
@@ -89,4 +92,271 @@
 .animate-in {
   animation: in 0.6s both;
   animation-delay: calc(var(--index) * 130ms);
+}
+/* Illustrations: monotone grays with a single jade accent */
+:root {
+  --iso-base: var(--gray-2);
+  --iso-edge: var(--gray-8);
+  --iso-top: var(--gray-3);
+  --iso-left: var(--gray-8);
+  --iso-right: var(--gray-6);
+}
+
+.dark,
+.terminal {
+  --iso-top: var(--gray-8);
+  --iso-left: var(--gray-4);
+  --iso-right: var(--gray-6);
+}
+
+.iso {
+  width: 100%;
+  height: 100%;
+}
+
+.iso-grid polyline {
+  fill: none;
+  stroke: var(--gray-5);
+  stroke-width: 0.5;
+}
+
+.iso-route {
+  fill: none;
+  stroke: var(--jade-9);
+  stroke-width: 0.75;
+  stroke-dasharray: 2 3;
+  opacity: 0.35;
+}
+
+.iso-face {
+  fill: var(--iso-base);
+  stroke: var(--iso-edge);
+  stroke-width: 0.75;
+  stroke-linejoin: round;
+  transition: fill 0.5s ease, stroke 0.5s ease;
+}
+
+.iso-decal {
+  fill: none;
+  stroke: var(--iso-edge);
+  stroke-width: 0.75;
+  stroke-linecap: round;
+  transition: stroke 0.5s ease;
+}
+
+.iso-dot {
+  fill: var(--jade-9);
+}
+
+.iso-dot-halo {
+  fill: var(--jade-9);
+  opacity: 0.2;
+}
+
+.group:hover .iso-top,
+.iso:hover .iso-top {
+  fill: var(--iso-top);
+}
+
+.group:hover .iso-left,
+.iso:hover .iso-left {
+  fill: var(--iso-left);
+}
+
+.group:hover .iso-right,
+.iso:hover .iso-right {
+  fill: var(--iso-right);
+}
+
+.group:hover .iso-face,
+.iso:hover .iso-face {
+  stroke: var(--gray-9);
+}
+
+.group:hover .iso-decal,
+.iso:hover .iso-decal {
+  stroke: var(--jade-9);
+}
+
+.illo {
+  margin: 0;
+  border: 1px solid color-mix(in srgb, var(--color-primary) 10%, transparent);
+  background: var(--gray-2);
+  overflow: hidden;
+}
+
+.illo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  stroke-linecap: round;
+}
+
+@keyframes illo-breathe {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.82); }
+}
+
+.illo-breathe {
+  transform-box: fill-box;
+  transform-origin: bottom;
+  animation: illo-breathe 4s ease-in-out infinite;
+}
+
+@keyframes illo-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.illo-pulse,
+.illo-blink {
+  animation: illo-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes illo-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+
+.illo-draw {
+  stroke-dasharray: 1;
+  animation: illo-draw 1.6s ease-out both;
+}
+
+@keyframes illo-flow {
+  to { stroke-dashoffset: -20; }
+}
+
+.illo-flow {
+  animation: illo-flow 0.8s linear infinite;
+}
+
+@keyframes illo-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.illo-bob {
+  animation: illo-bob 1.8s ease-in-out infinite;
+}
+
+@keyframes illo-ping {
+  0%, 30%, 100% { fill: var(--gray-6); transform: scale(1); }
+  6% { fill: var(--jade-9); transform: scale(1.5); }
+}
+
+.illo-ping {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: illo-ping 5s ease-out infinite;
+}
+
+@keyframes illo-type {
+  0% { transform: scaleX(0); opacity: 1; }
+  8%, 85% { transform: scaleX(1); opacity: 1; }
+  100% { transform: scaleX(1); opacity: 0; }
+}
+
+.illo-type {
+  transform-box: fill-box;
+  transform-origin: left;
+  animation: illo-type 8s ease-out infinite both;
+}
+
+@keyframes illo-appear {
+  0% { opacity: 0; transform: translateY(6px); }
+  8%, 85% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(0); }
+}
+
+.illo-appear {
+  animation: illo-appear 7s ease-out infinite both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-dot {
+    display: none;
+  }
+
+  .illo * {
+    animation: none !important;
+  }
+}
+
+/* Long-form content: theme-matched typography */
+.prose {
+  --tw-prose-body: var(--gray-11);
+  --tw-prose-headings: var(--gray-12);
+  --tw-prose-lead: var(--gray-11);
+  --tw-prose-links: var(--gray-12);
+  --tw-prose-bold: var(--gray-12);
+  --tw-prose-counters: var(--gray-9);
+  --tw-prose-bullets: var(--gray-8);
+  --tw-prose-hr: var(--gray-5);
+  --tw-prose-quotes: var(--gray-12);
+  --tw-prose-quote-borders: var(--jade-9);
+  --tw-prose-captions: var(--gray-9);
+  --tw-prose-code: var(--gray-12);
+  --tw-prose-pre-code: var(--gray-12);
+  --tw-prose-pre-bg: var(--gray-3);
+  --tw-prose-th-borders: var(--gray-6);
+  --tw-prose-td-borders: var(--gray-5);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+.prose :where(h2) {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.prose :where(h3) {
+  font-size: 1.2rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose :where(h4) {
+  margin-top: 1.75rem;
+}
+
+.prose :where(p) {
+  margin-top: 0;
+  margin-bottom: 1.4em;
+}
+
+.prose :where(li) {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.prose :where(li)::marker {
+  font-variant-numeric: tabular-nums;
+}
+
+.prose :where(hr) {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.prose :where(blockquote) {
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 1.25rem;
+}
+
+.prose :where(blockquote p:first-of-type)::before,
+.prose :where(blockquote p:last-of-type)::after {
+  content: none;
+}
+
+.prose :where(strong) {
+  font-weight: 600;
+}
+
+.prose :where(ins) {
+  text-decoration-color: var(--jade-9);
+  text-underline-offset: 4px;
 }
